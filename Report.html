@@ -1,0 +1,34 @@
+<form action="//submit.form" id="ReportProblem100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.ProblemDescription.value == "") { alert('Please enter describe the problem.'); frm.ProblemDescription.focus(); return false; }
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+return true; }
+</script>
+<h1>Report to Us!</h1>
+<label for="ProblemDescription" style="font-weight:bold">Describe the problem:</label><br />
+Please provide as much detail as possible.
+<br />
+When (time/date) did the problem occur?
+<br />
+Where are you?
+<br />
+<textarea name="ProblemDescription" rows="7" cols="40" style="width:100%;max-width:450px;"></textarea>
+<br /><br />
+<label for="Name" style="font-weight:bold">Name*:</label><br />
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:450px;" />
+<br /><br />
+<label for="PhoneNumber" style="font-weight:bold">Phone number:</label><br />
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:450px;" />
+<br /><br />
+<label for="FromEmailAddress" style="font-weight:bold">Email address*:</label><br />
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:450px;" />
+<br /><br />
+Fill up every details
+<br /><br />
+<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">Form to Email</a></div>
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:59RKXU539HNG" type="text/javascript"></script>
+</form>
